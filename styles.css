@@ -18,6 +18,14 @@ header {
     text-align: center;
 }
 
+header {
+    background: url('images/porkchop.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 400px; /* Adjust height as needed */
+}
+
 header nav ul {
     list-style: none;
     padding: 0;
@@ -28,7 +36,7 @@ header nav ul {
 
 header nav ul li a:focus,
 .contact-btn:focus {
-    outline: 2px dashed #0073e6;
+    outline: 4px dashed #0b233b;
     outline-offset: 4px;
 }
 
@@ -40,7 +48,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #0073e6; /* Change color on hover */
+    color: #020910; /* Change color on hover */
 }
 
 .hero {
@@ -119,18 +127,25 @@ section {
 .contact-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
-    color: white;
-    background-color: #0073e6;
+    padding: 1rem 3.5rem; /* Larger padding */ 
+    min-width: 200px; /* Set a minimum width */
+    min-height: 70px; /* Set a minimum height */
+    color: #fff;
+    background-color: #6c0606;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 2.5rem; /* Larger font size */
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-btn:hover {
-    background-color: #005bb5;
+    background-color: #01060b;
     transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.contact-btn:focus {
+    outline: 4px solid #0b0b0c;
+    outline-offset: 4px;
 }
 
 footer {
@@ -139,18 +154,27 @@ footer {
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
-    background-color: #333;
+    background-color: white;
     color: #bbb; /* Lighter text color */
 }
 
-footer a:hover {
-    color: #0073e6;
-    text-decoration: underline;
+footer p {
+    font-size: 1.5rem; /* Increase font size for larger text */
+    margin: 0;
+    font-weight: bold; /* Optional: Make text bold */
 }
 
-.contact-btn:focus {
-    outline: 2px dashed #0073e6;
-    outline-offset: 4px;
+footer a.contact-link {
+    color: limegreen; /* Change link color */
+    text-decoration: none;
+    font-size: 24px; /* Match link font size with text */
+    font-weight: bold; /* Optional: Make link text bold */
+    transition: color 0.3s, text-decoration 0.3s; /* Add smooth transition */
+}
+
+footer a.contact-link:hover {
+    color: #fff; /* Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 /* Responsive Styles */
