@@ -1,4 +1,8 @@
 /* General Styles */
+* {
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -139,10 +143,14 @@ footer {
     color: #bbb; /* Lighter text color */
 }
 
-footer a {
+footer a:hover {
     color: #0073e6;
-    text-decoration: none;
-    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.contact-btn:focus {
+    outline: 2px dashed #0073e6;
+    outline-offset: 4px;
 }
 
 /* Responsive Styles */
@@ -166,8 +174,14 @@ footer a {
     }
 
     .project-item {
-        width: 300px; /* Set a fixed width for larger screens */
-        margin: 10px; /* Space between project items */
+        max-width: 100%; /* Limit max-width to ensure it doesn't stretch too much */
+    }    
+}
+
+@media (min-width: 1024px) {
+    .project-item {
+        width: 350px; /* Wider project cards for larger screens */
+        padding: 30px; /* Increase padding for more spacious look */
     }
 }
 
