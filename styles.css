@@ -22,8 +22,10 @@ header nav ul {
     gap: 20px; /* Space between items */
 }
 
-header nav ul li {
-    margin: 0;
+header nav ul li a:focus,
+.contact-btn:focus {
+    outline: 2px dashed #0073e6;
+    outline-offset: 4px;
 }
 
 header nav ul li a {
